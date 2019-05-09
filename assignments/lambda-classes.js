@@ -1,10 +1,10 @@
 // CODE here for your Lambda Classes
 
 class Person {
-    constructor(name, age, location) {
-        this.name = name;
-        this.age = age;
-        this.location = location;
+    constructor(personAttrs) {
+        this.name = personAttrs.name;
+        this.age = personAttrs.age;
+        this.location = personAttrs.location;
     }
     speak() {
         return `Hello my name is ${this.name}, I am from ${this.location}.`
@@ -16,7 +16,7 @@ class Instructor extends Person {
         super(instructorAttrs);
         this.favLanguage = instructorAttrs.favLanguage;
         this.specialty = instructorAttrs.specialty;
-        this.catchPhrase = instructorAttrs.specialty;
+        this.catchPhrase = instructorAttrs.catchPhrase;
     }
     demo(string) {
         return `Today, we are learning about ${string}.`
@@ -43,3 +43,46 @@ class Student extends Person {
         return `${this.name} has begun sprint challenge on ${subject}.`
     }
 }
+
+class ProjectManager extends Instructor {
+    constructor(pmAttrs) {
+        super(pmAttrs);
+        this.graduatingClass = pmAttrs.graduatingClass;
+        this.favInstructor = pmAttrs.favInstructor;
+    }
+    standUp(channel) {
+        return `${this.name} announces to ${channel}, @channel standy times!`
+    }
+    debugsCode(student, subject) {
+        return `${this.name} debugs ${student.name}'s code on ${subject}.`
+    }
+}
+
+const alvin = new Instructor({
+    name: 'Alvin',
+    age: 8,
+    location: `Dave's house`,
+    favLanguage: 'Chipmunk',
+    specialty: 'Singing',
+    catchPhrase: 'All I want for Christmas is my two front teeth.'
+});
+
+const simon = new Instructor({
+    name: 'Simon',
+    age: 8,
+    location: `Dave's house`,
+    favLanguage: 'JavaScript',
+    specialty: 'Front-end',
+    catchPhrase: 'According to my calculations...'
+});
+
+const theodore = new Instructor({
+    name: 'Theodore',
+    age: 8,
+    location: `Dave's house`,
+    favLanguage: 'Chipmunk',
+    specialty: 'Hugs',
+    catchPhrase: 'Dave?  Can I sleep with you tonight?'
+})
+
+console.log(simon.demo('Dabbing'))
