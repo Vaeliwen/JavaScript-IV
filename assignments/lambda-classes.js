@@ -100,7 +100,7 @@ const nick = new Student({
     location: 'California',
     previousBackground: 'Child boy-band star',
     className: 'WEB20',
-    favSubjects: 'Camp Rock movies & HTML'
+    favSubjects: 'Cheese, but only on pizzas, and sometimes on homemade quesadillas'
 })
 
 const joe = new Student({
@@ -109,5 +109,45 @@ const joe = new Student({
     location: 'California',
     previousBackground: 'Child boy-band star',
     className: 'WEB20',
-    favSubjects: 'Cheese, but only on pizzas, and sometimes on homemade quesadillas'
-})
+    favSubjects: 'Camp Rock movies & HTML'
+});
+
+const archie = new ProjectManager({
+    name: 'Archie',
+    age: 16,
+    location: 'Riverdale',
+    favLanguage: 'HTML',
+    specialty: 'Back-end and singing',
+    catchPhrase: `You can't go through life trying not to get hurt.`,
+    graduatingClass: 'WEB18',
+    favInstructor: 'Simon'
+});
+
+const jughead = new ProjectManager({
+    name: 'Jughead',
+    age: 16,
+    location: 'Riverdale',
+    favLanguage: 'CSS',
+    specialty: 'UI & Drums',
+    catchPhrase: 'Sardonic humor is just my way of relating to the world.',
+    graduatingClass: 'WEB18',
+    favInstructor: 'Theodore'
+});
+
+const hotDog = new ProjectManager({
+    name: 'Hot Dog',
+    age: 6,
+    location: `Jughead's house`,
+    favLanguage: 'Dog',
+    specialty: 'Being a good boy',
+    catchPhrase: 'Woof!',
+    graduatingClass: 'WEB18',
+    favInstructor: 'Alvin'
+});
+
+//Instructor console.logs
+console.log(alvin.speak())
+console.log(simon.demo('JavaScript'))
+console.log(theodore.grade(kevin, 'JavaScript'))
+
+//Student console.logs
