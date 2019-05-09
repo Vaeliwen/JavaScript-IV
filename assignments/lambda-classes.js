@@ -151,3 +151,11 @@ console.log(simon.demo('JavaScript'))
 console.log(theodore.grade(kevin, 'JavaScript'))
 
 //Student console.logs
+console.log(kevin.listsSubjects())
+console.log(joe.PRAssignment('JavaScript'))
+console.log(nick.sprintChallenge('CSS'))
+
+//PM console.logs
+console.log(archie.demo('singing'))
+console.log(jughead.standUp('@WEB20-jughead'))
+console.log(hotDog.debugsCode(kevin, 'CSS'))
