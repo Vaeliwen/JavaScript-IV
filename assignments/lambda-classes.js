@@ -85,4 +85,29 @@ const theodore = new Instructor({
     catchPhrase: 'Dave?  Can I sleep with you tonight?'
 })
 
-console.log(simon.demo('Dabbing'))
+const kevin = new Student({
+    name: 'Kevin',
+    age: 31,
+    location: 'California',
+    previousBackground: 'Child boy-band star',
+    className: 'WEB20',
+    favSubjects: 'CSS & JavaScript'
+});
+
+const nick = new Student({
+    name: 'Nick',
+    age: 26,
+    location: 'California',
+    previousBackground: 'Child boy-band star',
+    className: 'WEB20',
+    favSubjects: 'Camp Rock movies & HTML'
+})
+
+const joe = new Student({
+    name: 'Joe',
+    age: 29,
+    location: 'California',
+    previousBackground: 'Child boy-band star',
+    className: 'WEB20',
+    favSubjects: 'Cheese, but only on pizzas, and sometimes on homemade quesadillas'
+})
